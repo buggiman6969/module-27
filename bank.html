@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-200">
+    <header>
+        <h1 class="text-5xl text-center mt-6">lets get some <span class="font-semibold text-red-400">Moooooney !!!!</span></h1>
+    </header>
+    <main>
+        <section class="grid gap-4 grid-cols-3 grid-rows-1 justify-center m-12 ">
+            <div class="w-30 bg-amber-400 p-8 text-white rounded-lg">
+                <p>Deposit</p>
+                <p class="text-4xl">$<span id="deposit-output">0</span></p>
+            </div>
+            <div class="w-30 bg-red-500 p-8 text-white rounded-lg">
+                <p>Withdraw</p>
+                <p class="text-4xl">$<span id="withdraw-output">0</span></p>
+            </div>
+            <div class="w-30 bg-cyan-400 p-8 text-white rounded-lg">
+                <p>Balance</p>
+                <p class="text-4xl">$<span id="total-balance">2000</span></p>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 grid-rows-1 justify-center m-2">
+            <div class="grid gap-4 grid-cols-1 grid-rows-1 justify-center m-12 bg-emerald-600 p-8 rounded-lg">
+                <p class="text-white">Please Deposit</p>
+                <input type="text" name="" id="deposit-input" class="px-3" placeholder="$ Amount you wand to deposit">
+                <button class="bg-indigo-800 hover:bg-violet-600 text-slate-50 p-2 w-40 rounded-lg hover:bg-violet-600" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="grid gap-4 grid-cols-1 grid-rows-1 justify-center m-12 bg-yellow-500 p-8 rounded-lg">
+                <p class="text-white">Please Withdraw</p>
+                <input type="text" name="" id="withdraw-input" class="px-3" placeholder="$ Amount you wand to withdraw">
+                <button class="bg-indigo-800 hover:bg-violet-600 text-slate-50 p-2 w-40 rounded-lg hover:bg-violet-600" id="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+<!-- ==========js======== -->
+<script src="./js/bank.js"></script>
+</body>
+</html>
